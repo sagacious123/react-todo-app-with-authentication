@@ -24,7 +24,7 @@ function Form({ setInputText, inputText, todos, setTodos, setStatus }) {
   return (
     <form className="flex justify-between m-auto mt-16 w-10/12 max-w-md">
       <div className="flex w-8/12">
-        <input onChange={inputTextHandler} value={inputText}  className="bg-purple-200 rounded-bl-sm rounded-tl-sm p-1 w-full text-gray-900 outline-none" type="text" />
+        <input onChange={inputTextHandler} value={inputText}  className="bg-purple-200 rounded-bl-sm rounded-tl-sm p-1 w-full text-gray-900 outline-none" type="text" placeholder="Enter task" />
         <button onClick={submitHandler} className="px-2 text-xl font-extrabold rounded-br-sm rounded-tr-sm bg-gradient-to-r from-purple-600 to-purple-900 shadow-lg focus:outline-none text-gray-300 hover:from-blue-600 hover:to-purple-700">
           <i className="mdi mdi-plus"></i>
         </button>
