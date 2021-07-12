@@ -52,25 +52,25 @@ function App() {
     console.log(indUser);
   }
   
-  const loginUser = () => {
-    let finalUser = JSON.parse(localStorage.getItem('users'));
-    if(finalUser.length > 0) {
-      const filterArray = finalUser.filter(user => {
+  // const loginUser = () => {
+  //   let finalUser = JSON.parse(localStorage.getItem('users'));
+  //   if(finalUser.length > 0) {
+  //     const filterArray = finalUser.filter(user => {
       
-        return user.lsEmail === email;
-      })
+  //       return user.lsEmail === email;
+  //     })
 
-      if (filterArray.length > 0) {
-        setGreetingName(filterArray[0].lsUsername);
-        console.log(filterArray)
-      } 
-    }
+  //     if (filterArray.length > 0) {
+  //       setGreetingName(filterArray[0].lsUsername);
+  //       console.log(filterArray)
+  //     } 
+  //   }
  
-  }
+  // }
 
-  useEffect(() => {
-    loginUser()
-  })
+  // useEffect(() => {
+  //   loginUser()
+  // })
 
   // window.onreadystatechange = () => loginUser();
 
@@ -152,7 +152,7 @@ function App() {
     <>
     <Navbar handleLogOut={handleLogOut} user={user}/>
     {user ? 
-      <TodoPage greetingName={greetingName} loginUser={loginUser} /> : 
+      <TodoPage greetingName={greetingName} /> : 
       (<Login 
         userName={userName} 
         setUserName={setUserName} 
@@ -170,7 +170,7 @@ function App() {
         setLsUser={setLsUser}
         setLsMail={setLsMail}
         registerUser={registerUser}
-        loginUser={loginUser}
+        // loginUser={loginUser}
         setNewMail={setNewMail}
       />)}
       

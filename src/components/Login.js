@@ -91,7 +91,7 @@ function Login(props) {
               // loginUser();
               }
             } 
-            className="rounded-sm w-full text-gray-200 my-2 py-2 px-4 bg-gradient-to-r from-blue-400 to-purple-600 shadow-lg focus:outline-none hover:from-blue-600 hover:to-purple-700 hover:shadow-2xl transition duration-1000 ease-in-out">
+            className="rounded-sm w-full text-gray-200 my-2 py-2 px-4 bg-gradient-to-r from-blue-400 to-purple-600 shadow-lg focus:outline-none hover:from-blue-600 hover:to-purple-700 hover:shadow-2xl transition duration-200 ease-in-out focus:ring-2 ring-offset-yellow-50 ring-indigo-300">
             Sign in
           </button>
           <p className="text-gray-200 text-right text-sm mt-2">Don't have an account? <span className="text-yellow-400 cursor-pointer hover:text-red-500" onClick={() => setHasAccount(!hasAccount)}>Sign up</span></p>
@@ -102,7 +102,7 @@ function Login(props) {
             onClick={() => {
               handleSignup();
               registerUser();
-              loginUser();
+              // loginUser();
               }
             } 
             className="rounded-sm w-full text-gray-200 my-2 py-2 px-4 bg-gradient-to-r from-blue-400 to-purple-600 shadow-lg focus:outline-none hover:from-blue-600 hover:to-purple-700 hover:shadow-2xl transition duration-1000 ease-in-out">
